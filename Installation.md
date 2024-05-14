@@ -8,7 +8,9 @@ docker image ls # Add the ec2-user to the docker group so you can execute Docker
 cat /etc/group # docker group present and ec2-user does not present to the group
 sudo usermod -G docker ec2-user 
 cat /etc/group  # We must see ec2-user belongs to the docker group.
-sudo chmod  666 /var/run/docker.sock
+# Logout of the screen and login again
 docker image ls
 docker run -itd ubuntu
+# Alternative Solution
+sudo chmod  666 /var/run/docker.sock
 ```
