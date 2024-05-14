@@ -1,4 +1,14 @@
-### Docker Installation
+### Docker Installation (Using the Docker Desktop)
+```sh
+https://docs.docker.com/desktop/install/windows-install/
+```
+
+### Docker Installation (Online platform)
+```sh
+https://labs.play-with-docker.com/ # Login using the docker hub
+```
+
+### Docker Installation (using ec2)
 ```sh
 How to install docker: (Login as ec2-user)
 sudo yum install docker
