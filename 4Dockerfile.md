@@ -62,7 +62,7 @@ EXPOSE 8080
 # Create the staic page
 WORKDIR /root/RnD/tomcat8/webapps
 RUN mkdir amiya
-RUN echo "<h2> Welcome to the world of Cloud technology - V1 </h2>" > amiya/index.html
+RUN echo "<h2> Welcome to the Docker technology - V1 </h2>" > amiya/index.html
 CMD ["/root/RnD/tomcat8/bin/catalina.sh","run"]
 ```
 
