@@ -45,6 +45,26 @@ It works at run(container) time
 Similar to CMD, but has higher priority over CMD
 ```
 
+### Sample Dockerfile
+```sh
+FROM alpine:3.14.1
+LABEL AUTHOR="amiya sahoo"
+RUN apk add openjdk8
+
+# Download and install tomcat8
+WORKDIR /root/RnD
+RUN wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.93/bin/apache-tomcat-8.5.93.tar.gz
+RUN tar -xvf apache-tomcat-8.5.93.tar.gz
+RUN mv apache-tomcat-8.5.93 tomcat8
+
+EXPOSE 8080
+
+# Create the staic page
+WORKDIR /root/RnD/tomcat8/webapps
+RUN mkdir amiya
+RUN echo "<h2> Welcome to the world of Cloud technology - V1 </h2>" > amiya/index.html
+CMD ["/root/RnD/tomcat8/bin/catalina.sh","run"]
+```
 
 
 
