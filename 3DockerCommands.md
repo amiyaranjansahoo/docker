@@ -2,6 +2,7 @@
 ```sh
 docker run -d -p 80:80  --name mynginx nginx
 docker run -d -p 8080:8080 amiyaranjansahoo/myapp:v1
+docker run -it amiyaranjansahoo/img1:v1 bash
 ```
 #### List the containers
 ```sh
