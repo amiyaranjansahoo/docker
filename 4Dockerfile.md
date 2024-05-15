@@ -48,7 +48,7 @@ Similar to CMD, but has higher priority over CMD
 ### Sample Dockerfile
 ```sh
 FROM alpine:3.14.1
-LABEL AUTHOR="amiya sahoo"
+LABEL name="amiya"
 RUN apk add openjdk8
 
 # Download and install tomcat8
