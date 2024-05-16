@@ -39,10 +39,17 @@ To set the working directory for a container
 ```sh
 Execute commands but during container creation
 It works at run(container) time
+# FROM ubuntu
+# CMD ["echo","Welcome to docker"]
+# docker run -it cont_id uname
 ```
 ### ENTRYPOINT
 ```sh
 Similar to CMD, but has higher priority over CMD
+# FROM ubuntu
+# ENTRYPOINT echo "Welcome to docker"
+# docker run -it cnt_id echo 'Welcome to aws'
+
 ```
 
 ### Sample Dockerfile
