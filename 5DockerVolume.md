@@ -8,6 +8,7 @@ Note: Stateful application stores its state in data in local
 #### Without Volume
 ```sh
 docker run -d -p 8080:8080 --name  myjenkins jenkins/jenkins
+docker exec -it myjenkins /bin/bash
 ```
 #### With Volume
 ```sh
