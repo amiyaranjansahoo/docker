@@ -3,9 +3,19 @@
 Tool for running multi-container docker applications.
 Use yaml files to define the services, networks, volumes etc
 Can start and stop all services with a single command.
-
 ```
-### Docker Compose file
+### How to install docker-compose
+```sh
+# For Windows and MAC its already installed with docker
+# Follow the below for linux variant
+sudo curl -L --fail https://raw.githubusercontent.com/linuxserver/docker-docker-compose/master/run.sh -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+
+# Any command we will run related to docker-compose, the images gets download to docker host.
+docker-compose -v
+docker-compose config
+```
+### Sample docker-compose.yml
 ```sh
 version: '2'
 services:
@@ -29,7 +39,14 @@ networks:
   javahome-app:
     driver: bridge
 ```
-### 
+### How to Deploy docker compose
 ```sh
+docker-compose up -d 
+# Access using: http://<public ip>/8080
+
+docker-compose ps
+Docker ps
+docker-compose down # Remove all containers
+```
 
 
