@@ -46,7 +46,7 @@ docker-compose up -d
 # Access using: http://<public ip>/8080
 
 docker-compose ps
-Docker ps
+docker ps
 docker-compose down # Remove all containers
 ```
 
