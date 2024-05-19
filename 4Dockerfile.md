@@ -35,6 +35,14 @@ To expose ports such as port 8080 for tomcat,
 ```sh
 To set the working directory for a container
 ```
+### ARG
+```sh
+Use build-time variables
+```
+### ENV
+```sh
+To set the environment variable at runtime
+```
 ### CMD
 ```sh
 Execute commands but during container creation
