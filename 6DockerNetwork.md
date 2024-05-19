@@ -6,7 +6,7 @@ apt update -y
 apt install iputils-ping
 ```
 
-# Creating a network and adding contaier to the network
+### Creating a network and adding contaier to the network
 ```sh
 # Creating the custom bridge network
 docker network create -d bridge bridge1
