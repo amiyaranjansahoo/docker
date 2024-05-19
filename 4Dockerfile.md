@@ -62,23 +62,24 @@ Similar to CMD, but has higher priority over CMD
 
 ### Sample Dockerfile
 ```sh
-FROM alpine:3.14.1
-LABEL name="amiya"
+ARG version=3.14.1
+FROM alpine:${version}
+LABEL name="java home"
 RUN apk add openjdk8
 
 # Download and install tomcat8
 WORKDIR /root/RnD
-RUN wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.93/bin/apache-tomcat-8.5.93.tar.gz
-RUN tar -xvf apache-tomcat-8.5.93.tar.gz
-RUN mv apache-tomcat-8.5.93 tomcat8
+RUN wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.89/bin/apache-tomcat-9.0.89.tar.gz
+RUN tar -xvf apache-tomcat-9.0.89.tar.gz
+RUN mv apache-tomcat-9.0.89 tomcat9
 
 EXPOSE 8080
 
 # Create the staic page
-WORKDIR /root/RnD/tomcat8/webapps
+WORKDIR /root/RnD/tomcat9/webapps
 RUN mkdir amiya
 RUN echo "<h2> Welcome to the Docker technology - V1 </h2>" > amiya/index.html
-CMD ["/root/RnD/tomcat8/bin/catalina.sh","run"]
+CMD ["/root/RnD/tomcat9/bin/catalina.sh","run"]
 ```
 ### Multi stage docker build
 ```sh
