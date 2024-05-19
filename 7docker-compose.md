@@ -1,3 +1,11 @@
+### Docker Compose
+```sh
+Tool for running multi-container docker applications.
+Use yaml files to define the services, networks, volumes etc
+Can start and stop all services with a single command.
+
+```
+### Docker Compose file
 ```sh
 version: '2'
 services:
@@ -21,3 +29,7 @@ networks:
   javahome-app:
     driver: bridge
 ```
+### 
+```sh
+
+
