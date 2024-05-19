@@ -41,6 +41,7 @@ networks:
 ```
 ### How to Deploy docker compose
 ```sh
+# Supported filenames: docker-compose.yml, docker-compose.yaml, compose.yml, compose.yaml
 docker-compose up -d 
 # Access using: http://<public ip>/8080
 
