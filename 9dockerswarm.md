@@ -39,3 +39,11 @@ docker service ls
 ```sh
 docker stack rm <STACK_NAME>
 ```
+#### Leave the Swarm on the worker node
+```sh
+docker swarm leave
+````
+#### Leave the Swarm on the manager node
+```sh
+docker swarm leave --force
+```
