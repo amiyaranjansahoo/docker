@@ -31,6 +31,10 @@ services:
 ```sh
 docker stack deploy -c docker-compose.yml my-nginx-stack
 ```
+#### List the stack
+```sh
+docker stack ls
+````
 #### List Services:
 ```sh
 docker service ls
