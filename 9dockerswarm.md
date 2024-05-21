@@ -2,8 +2,8 @@
 ```sh
 Docker's native clustering and orchestration tool
 It allows you to manage and orchestrate a group of Docker nodes
-It enables you to deploy, scale, and manage containerized applications across multiple hosts,
-providing high availability, load balancing, and scalability
+It enables you to deploy, scale, and manage containerized applications across multiple hosts
+It provides high availability, load balancing and scalability
 ```
 #### How to Initialize Swarm:
 ```sh
