@@ -5,7 +5,8 @@ Running instance of an image
 #### What is a Docker Image
 ```sh
 A Docker image is a lightweight, executable package.
-It contains everything needed to run an application: code, runtime, system tools, system libraries and settings
+It contains everything needed to run an application: code, runtime,
+system tools, system libraries and settings
 It’s a snapshot of the container
 ```
 #### What is a Docker File
