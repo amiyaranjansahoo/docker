@@ -11,12 +11,15 @@ It  automates the deployment of applications as a container
 1. Faster Boot Time: Containers can start in seconds (or even milliseconds)
 because they don’t need to boot an entire OS. In contrast, VMs take minutes
 to boot up since each VM has its own OS.
+
 2. Lightweight: Docker containers share the host OS kernel, allowing multiple containers
 to run on a single host without the overhead of a full OS for each instance. This makes
  containers much lighter in terms of both memory and CPU usage compared to VMs.
+
 3. Consistency Across Environments: Docker ensures that the application and its dependencies
 are packaged together, making it easy to move containers across different environments
 (development, testing, production) without worrying about environment-specific issues.
+
 4. Platform Independence: Docker images can run on any system that supports Docker, providing
 a consistent environment regardless of the underlying infrastructure (e.g., local machines,
 on-premises servers, or cloud platforms).
