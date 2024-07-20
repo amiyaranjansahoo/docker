@@ -69,9 +69,9 @@ RUN apk add openjdk8
 
 # Download and install tomcat8
 WORKDIR /root/RnD
-RUN wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.89/bin/apache-tomcat-9.0.89.tar.gz
-RUN tar -xvf apache-tomcat-9.0.89.tar.gz
-RUN mv apache-tomcat-9.0.89 tomcat9
+RUN wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.91/bin/apache-tomcat-9.0.91.tar.gz
+RUN tar -xvf apache-tomcat-9.0.91.tar.gz
+RUN mv apache-tomcat-9.0.91 tomcat9
 
 EXPOSE 8080
 
