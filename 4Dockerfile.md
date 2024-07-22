@@ -59,7 +59,12 @@ Similar to CMD, but has higher priority over CMD
 # FROM ubuntu
 # ENTRYPOINT echo "Welcome to docker"
 # docker run -it <container_id> echo 'Welcome to aws'
-
+```
+### CMD and ENTRYPOINT
+```sh
+FROM ubuntu
+ENTRYPOINT ["echo"]
+CMD ["Welcome to Docker"]
 ```
 
 ### Sample Dockerfile
