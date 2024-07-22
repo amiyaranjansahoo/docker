@@ -2,6 +2,7 @@
 ```sh
 docker run -itd nginx
 docker run -itd tomcat
+docker network inspect bridge
 apt update -y
 apt install iputils-ping
 ```
