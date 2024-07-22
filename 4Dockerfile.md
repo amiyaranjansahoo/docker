@@ -49,14 +49,16 @@ Execute commands but during container creation
 It works at run(container) time
 # FROM ubuntu
 # CMD ["echo","Welcome to docker"]
-# docker run -it cont_id uname
+# docker run -it <container_id>
+# docker run -it <container_id> echo "welcome to aws"
+# docker run -it <container_id> uname
 ```
 ### ENTRYPOINT
 ```sh
 Similar to CMD, but has higher priority over CMD
 # FROM ubuntu
 # ENTRYPOINT echo "Welcome to docker"
-# docker run -it cnt_id echo 'Welcome to aws'
+# docker run -it <container_id> echo 'Welcome to aws'
 
 ```
 
