@@ -45,7 +45,7 @@ networks:
 docker-compose up -d 
 # Access using: http://<public ip>/8080
 
-docker-compose ps
+docker-compose ps # list of containers that are defined and managed by Docker Compose
 docker ps
 docker-compose config --services # List the services
 docker-compose down # Remove all containers
