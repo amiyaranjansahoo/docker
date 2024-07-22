@@ -47,6 +47,7 @@ docker-compose up -d
 
 docker-compose ps
 docker ps
+docker-compose config --services # List the services
 docker-compose down # Remove all containers
 ```
 
