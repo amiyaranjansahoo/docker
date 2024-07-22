@@ -21,6 +21,7 @@ docker network connect bridge1 5c714cf6ea3c
 ### Creating a container using the host network
 ```sh
 docker run --name nginx-host -itd --network host nginx
+docker run --name tomcat-host -itd --network host tomcat
 ```
 
 ### Creating a container using the none network
