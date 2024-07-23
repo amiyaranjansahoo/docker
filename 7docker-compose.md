@@ -21,7 +21,6 @@ version: '2'
 services:
   python:
     image: kammana/python-redis:1
-    container_name: python
     depends_on:
       - redis
     environment:
@@ -31,7 +30,6 @@ services:
     networks:
       - javahome-app
   redis:
-    container_name: redis
     image: "redis"
     networks:
       - javahome-app
