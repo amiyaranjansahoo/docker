@@ -69,6 +69,7 @@ CMD ["Welcome to Docker"]
 
 ### Sample Dockerfile
 ```sh
+https://github.com/amiyaranjansahoo/docker-cicd-students-demo.git
 ARG version=3.14.1
 FROM alpine:${version}
 LABEL name="java home"
