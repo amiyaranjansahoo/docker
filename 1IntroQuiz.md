@@ -26,21 +26,28 @@ b) A lightweight virtual machine
 c) A storage volume
 d) A service running on Docker Swarm
 ```
-#### 5. What happens if you attempt to perform a Docker build based on an image that has not been previously referenced on your machine?
+#### 5. What command installs Docker on Ubuntu-based systems?
+```sh
+a. yum install docker
+b. apt install docker-ce
+c. brew install docker
+d. snap install docker
+```
+#### 6. What happens if you attempt to perform a Docker build based on an image that has not been previously referenced on your machine?
 ```sh
 a) Docker will return a 408: image not found message.
 b) Docker will return a 404: file not found message.
 c) Docker will pull the image from GitHub.
 d) Docker will pull the image from Docker Hub.
 ```
-#### 6. What is a Docker image?
+#### 7. What is a Docker image?
 ```sh
 a) A running instance of a container
 b) A blueprint for creating containers
 c) A virtual machine
 d) A Docker plugin
 ```
-#### 7. How are Docker containers different from virtual machines?
+#### 8. How are Docker containers different from virtual machines?
 ```sh
 a) Docker containers are larger in size
 b) Docker containers share the host OS kernel
