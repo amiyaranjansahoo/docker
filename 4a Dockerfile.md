@@ -89,6 +89,12 @@ RUN mkdir amiya
 RUN echo "<h2> Welcome to the Docker technology - V1 </h2>" > amiya/index.html
 CMD ["/root/RnD/tomcat9/bin/catalina.sh","run"]
 ```
+#### Build, Create Container and Access the application
+```sh
+Build the image: docker build -t amiyaranjansahoo/img1:v2 .
+Create the container: docker run -d -p 9090:8080 amiyaranjansahoo/img1:v2
+Application url: http://publicip:9090/myweb
+```
 ### Multi stage docker build
 ```sh
 https://github.com/amiyaranjansahoo/multi-stage-spring-boot-docker
