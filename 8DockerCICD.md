@@ -1,7 +1,7 @@
 ### Docker Installation (using ec2) 
 ```sh
 How to install docker: (Login as ec2-user)
-sudo yum install docker
+sudo yum install docker -y
 docker version # Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
 sudo service docker start
 sudo systemctl enable docker
