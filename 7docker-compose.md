@@ -2,7 +2,10 @@
 ```sh
 Tool for running multi-container docker applications.
 Use yaml files to define the services, networks, volumes etc
-Can start and stop all services with a single command.
+Can start and stop all services with a single command: docker-compose up/down
+Its work on single node
+It does not work on multiple node
+Can scale up selected service when required
 ```
 ### How to install docker-compose
 ```sh
