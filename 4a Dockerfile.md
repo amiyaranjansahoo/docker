@@ -38,6 +38,11 @@ To set the working directory for a container
 ### ARG
 ```sh
 Use build-time variables
+
+# Example
+ARG alpine_version=3.20.1 
+FROM alpine:${alpine_version}
+docker build --build-arg alpine_version=3.19 -t amiya:v2 . 
 ```
 ### ENV
 ```sh
