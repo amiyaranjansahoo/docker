@@ -1,3 +1,22 @@
+# Docker Networking
+```sh
+Docker supports 3 types of networks
+	docker network list
+ • bridge
+ • host
+ •	none 
+```
+## Bridge Network:
+```sh
+•	By default docker containers uses bridge network
+•	It supports only IP based communication.
+•	This is the default network.
+•	The bridge network is a private internal network created by Docker on the host. 
+•	All containers attached to this network by default, and they get an internal IP address, usually in the range 172.17 series.
+•	The containers can access each other using this internal IP if required. 
+•	To access any of these containers from the outside world, map the ports of these containers to ports on the Docker host as
+we have seen before. 
+```
 ### Create 2 containers nginx and tomcat
 ```sh
 docker run -itd nginx
@@ -18,12 +37,27 @@ docker network connect bridge1 24f3d89002d4
 # Adding the tomcat container to bridge1 network
 docker network connect bridge1 5c714cf6ea3c
 ```
+## Host network
+```sh
+•	Another way to access the containers externally is to associate the container to the host network. 
+•	This takes out any network isolation between the Docker host and the Docker container. 
+•	Meaning if you were to run a web server on port 5000 in a web app container, it is automatically as accessible on the same
+ port externally without requiring any port mapping as the web container uses the hosts network.
+•	So this would also mean that unlike before, you will now not be able to run multiple web containers on the same host on the
+ same port, as the ports are now common to all containers in the host network. In current case 5000 port, as this is already \
+used by another container.
+```
 ### Creating a container using the host network
 ```sh
 docker run --name nginx-host -itd --network host nginx
 docker run --name tomcat-host -itd --network host tomcat
 ```
-
+## None Network:
+```sh
+•	With the none network that containers are not attached to any network and doesn't have any access to the external network
+ or other containers. 
+•	They run in an isolated network.
+```
 ### Creating a container using the none network
 ```sh
 docker run --name nginx-none -itd --network none nginx
