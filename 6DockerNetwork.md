@@ -12,9 +12,11 @@ Docker supports 3 types of networks
 •	It supports only IP based communication.
 •	This is the default network.
 •	The bridge network is a private internal network created by Docker on the host. 
-•	All containers attached to this network by default, and they get an internal IP address, usually in the range 172.17 series.
+•	All containers attached to this network by default, and they get an internal IP address, usually
+in the range 172.17 series.
 •	The containers can access each other using this internal IP if required. 
-•	To access any of these containers from the outside world, map the ports of these containers to ports on the Docker host as
+•	To access any of these containers from the outside world, map the ports of these containers to ports
+ on the Docker host as
 we have seen before. 
 ```
 ### Create 2 containers nginx and tomcat
