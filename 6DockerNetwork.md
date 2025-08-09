@@ -4,7 +4,7 @@ Docker supports 3 types of networks
 	docker network list
  • bridge
  • host
- •	none 
+ • none 
 ```
 ## Bridge Network:
 ```sh
