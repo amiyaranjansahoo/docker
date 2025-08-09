@@ -16,8 +16,7 @@ Docker supports 3 types of networks
 in the range 172.17 series.
 •	The containers can access each other using this internal IP if required. 
 •	To access any of these containers from the outside world, map the ports of these containers to ports
- on the Docker host as
-we have seen before. 
+ on the Docker host as we have seen before. 
 ```
 ### Create 2 containers nginx and tomcat
 ```sh
