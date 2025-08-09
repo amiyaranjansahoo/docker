@@ -42,11 +42,12 @@ docker network connect bridge1 5c714cf6ea3c
 ```sh
 •	Another way to access the containers externally is to associate the container to the host network. 
 •	This takes out any network isolation between the Docker host and the Docker container. 
-•	Meaning if you were to run a web server on port 5000 in a web app container, it is automatically as accessible on the same
- port externally without requiring any port mapping as the web container uses the hosts network.
-•	So this would also mean that unlike before, you will now not be able to run multiple web containers on the same host on the
- same port, as the ports are now common to all containers in the host network. In current case 5000 port, as this is already \
-used by another container.
+•	Meaning if you were to run a web server on port 5000 in a web app container, it is automatically
+as accessible on the same  port externally without requiring any port mapping as the web container
+uses the hosts network.
+•	So this would also mean that unlike before, you will now not be able to run multiple web containers
+ on the same host on the  same port, as the ports are now common to all containers in the host network.
+In current case 5000 port, as this is already used by another container.
 ```
 ### Creating a container using the host network
 ```sh
@@ -55,8 +56,8 @@ docker run --name tomcat-host -itd --network host tomcat
 ```
 ## None Network:
 ```sh
-•	With the none network that containers are not attached to any network and doesn't have any access to the external network
- or other containers. 
+•	With the none network that containers are not attached to any network and doesn't have any
+access to the external network or other containers. 
 •	They run in an isolated network.
 ```
 ### Creating a container using the none network
@@ -68,7 +69,8 @@ docker run --name nginx-none -itd --network none nginx
 ```sh
 When to use:
 Microservices Architecture:
-Multiple containers running different services that need to communicate with each other but not directly with the host.
+Multiple containers running different services that need to communicate with each other but not
+directly with the host.
 
 Local Development:
 Running a web application container and a database container that need to communicate.
