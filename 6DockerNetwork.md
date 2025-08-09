@@ -100,11 +100,12 @@ container ports to random high ports on the host).
 When to use:
 
 Isolation: For complete network isolation where the container should not have any network connectivity.
-This can be useful for certain security-focused applications or for testing purposes where network access is not needed.
+This can be useful for certain security-focused applications or for testing purposes where network access
+ is not needed.
 
 Local Processing: For containers that do not require network access, such as certain batch processing tasks,
 data transformation, or compute-intensive jobs where no network communication is necessary.
 
-Security: When you want to ensure that a container cannot access any network, which can be useful in high-security
- environments or when running sensitive computations that should not be exposed to any network.
+Security: When you want to ensure that a container cannot access any network, which can be useful in
+high-security  environments or when running sensitive computations that should not be exposed to any network.
 ```
