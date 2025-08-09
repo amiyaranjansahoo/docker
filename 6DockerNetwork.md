@@ -99,9 +99,10 @@ container ports to random high ports on the host).
 ```sh
 When to use:
 
-Isolation: For complete network isolation where the container should not have any network connectivity.
-This can be useful for certain security-focused applications or for testing purposes where network access
- is not needed.
+Isolation: For complete network isolation where the container should not have any network
+connectivity.
+This can be useful for certain security-focused applications or for testing purposes where network
+access is not needed.
 
 Local Processing: For containers that do not require network access, such as certain batch processing
  tasks, data transformation, or compute-intensive jobs where no network communication is necessary.
