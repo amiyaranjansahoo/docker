@@ -12,6 +12,6 @@ docker exec -it myjenkins /bin/bash
 ```
 #### With Volume
 ```sh
-docker volume create jenkins
-docker run -d -p 8080:8080 --name jenkins -v jenkins:/var/jenkins_home jenkins/jenkins
+docker volume create jenkins_volume
+docker run -d -p 8080:8080 --name jenkins -v jenkins_volume:/var/jenkins_home jenkins/jenkins
 ```
